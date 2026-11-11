@@ -1,0 +1,7 @@
+{
+  "appId": "com.example.thsrsim",
+  "appName": "高鐵駕駛模擬器",
+  "webDir": "www",
+  "backgroundColor": "#000000",
+  "plugins": { "StatusBar": { "overlaysWebView": true } }
+}
