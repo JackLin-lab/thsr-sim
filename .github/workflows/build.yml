@@ -23,7 +23,7 @@ jobs:
       - run: npx cap add android
       - name: Lock landscape
         run: |
-          sed -i '0,/<activity/s//<activity android:screenOrientation="sensorLandscape"/' android/app/src/main/AndroidManifest.xml
+          sed -i '0,/<activity/s//<activity android:screenOrientation="portrait"/' android/app/src/main/AndroidManifest.xml
           grep -n 'screenOrientation' android/app/src/main/AndroidManifest.xml
       - run: npx cap sync android
       - name: Build APK
